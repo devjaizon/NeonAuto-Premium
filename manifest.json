@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "NeonAuto Premium",
+    "version": "1.0",
+    "description": "A script to automate de Delivery actions in Neon District so that people can farm for it passively, but, as a premium version it has speed control",
+
+    "content_scripts": [
+        {
+            "matches": ["https://portal.neondistrict.io/*"],
+            "js": ["scripts/content.js"]
+        }
+    ],
+
+    "browser_action": {
+        "default_popup": "pages/popup.html",
+        "default_title": "NeonAuto Premium"
+    },
+
+    "icons": {
+        "128": "images/icon/icon.png",
+        "48": "images/icon/icon@2x.png",
+        "32": "images/icon/icon@3x.png",
+        "16": "images/icon/icon@8x.png"
+    },
+
+    "permissions": ["storage", "tabs"]
+}
